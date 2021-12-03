@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" ./css/main.css ">
+    <link rel="stylesheet" href="/css/main.css">
 
     <title>About Milk Alternatives</title>
     
 </head>
 <body>
-            <section class="milk">
-            <img href="">
+
+            <!--Waves container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <!--Go light to dark - NOT COMPLETE YET -->
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgb(255, 246, 246)" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgb(255, 246, 246)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(255, 246, 246)" />
+                        <!--Must be background colour-->
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(255, 246, 246)" />
+                    </g>
+                </svg>            
+            </div>
+        <!--Waves end-->
+
+
+        <section class="milk">
+        <img href="">
             <div>
                 <h2>Cow's Milk</h2>
                 <p>Description</p>
@@ -30,5 +51,11 @@
                 </tr>
             </table>
         </section>
+
+    <!-- Script icons on environmental impact, add anything from
+    https://ionic.io/ionicons -->
+
+    <script type="module"  src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script> 
+    <script nomodule="" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
 </body>
 </html>

@@ -106,7 +106,7 @@ header button:active {
 }
 
 
-/* For all milk alternative sections */
+/* For all sections */
 
 section {
     height: 700px;
@@ -129,6 +129,31 @@ section table tr th {
     font-size: 5rem;
 }
 
+/* Cow's Milk for about page */
+
+.milk {
+    padding: 50px;
+    background-color: rgb(255, 246, 246);
+}
+
+.milk div {
+    align-items: left;
+    text-align: left;
+}
+
+.milk img {
+    margin-left: 0px;
+    height: 700px;
+}
+
+.milk ion-icon {
+    color: rgb(85, 85, 85);
+}
+
+.milk table {
+    color: rgb(85, 85, 85);
+    text-align: center;
+}
 
 /* Almond Section */
 
