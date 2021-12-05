@@ -48,7 +48,6 @@ nav ul li {
 nav .milk-alt-title {
     font-family: 'Futura', sans-serif;
     font-size: 1.5rem;
-    margin-right: 600px;
     font-weight: bold;
 }
 
@@ -64,10 +63,14 @@ header {
     display: inline;
     background-color: rgb(252, 228, 213);
     height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    text-size-adjust: auto;
 }
 
 .page-title {
-    width: 800px;
+    padding: 50px;
     height: 500px;
     margin: auto;
     text-align: center;
@@ -109,7 +112,7 @@ header button:active {
 /* For all milk alternative sections */
 
 section {
-    height: 700px;
+    min-height: 500px;
     align-items: flex-start;
 }
 
@@ -123,14 +126,45 @@ section table {
     font-size: 1.5rem;
     font-weight: 700;
     border-spacing: 20px;
+    width: 70%; 
+    border-collapse: collapse; 
+    margin: auto;
 }
 
 section table tr th {
     font-size: 5rem;
 }
 
+/* Cow's Milk for about page */
+
+.milk {
+    padding: 50px;
+    background-color: rgb(255, 246, 246);
+}
+
+.milk div {
+    align-items: center;
+    text-align: center;
+}
+
+.milk ion-icon {
+    color: rgb(85, 85, 85);
+}
+
+.milk table {
+    color: rgb(85, 85, 85);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Almond Section */
+
+/* The almonddiv fixes buttons overlap in mobile view */
+
+.almonddiv {
+    padding-top: 40px;
+}
 
 .almond {
     padding: 50px;
@@ -138,8 +172,8 @@ section table tr th {
 }
 
 .almond div {
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
 .almond img {
@@ -154,6 +188,8 @@ section table tr th {
 .almond table {
     color: rgb(40, 135, 179);
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -165,8 +201,8 @@ section table tr th {
 }
 
 .oat div {
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
 .oat ion-icon {
@@ -176,6 +212,8 @@ section table tr th {
 .oat table {
     color: rgb(93, 155, 89);
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -187,8 +225,8 @@ section table tr th {
 }
 
 .rice div {
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
 .rice ion-icon {
@@ -198,6 +236,8 @@ section table tr th {
 .rice table {
     color: rgb(255, 128, 244);
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -209,8 +249,8 @@ section table tr th {
 }
 
 .soy div {
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
 .soy ion-icon {
@@ -220,6 +260,8 @@ section table tr th {
 .soy table {
     color: rgb(165, 147, 245);
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -231,8 +273,8 @@ section table tr th {
 }
 
 .coconut div {
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
 .coconut ion-icon {
@@ -242,6 +284,8 @@ section table tr th {
 .coconut table {
     color: rgb(255, 142, 142);
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -316,14 +360,47 @@ footer {
 /*Shrinking for mobile*/
 
 @media (max-width: 768px) {
+
     .waves {
         height: 40px;
-        min-height: 40px;
+        min-height: 30px;
     }
+
     .content {
         height: 30vh;
     }
+
     h1 {
-        font-size: 24px;
+        font-size: 2rem;
     }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    ion-icon {
+        font-size: 4rem;
+    }
+
+    section table tr th {
+        font-size: 3rem;
+        padding: 20px;
+    }
+
+    section table {
+        list-style: none;
+        font-family: 'Futura', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        border-spacing: 20px;
+        width: 70%; 
+        border-collapse: collapse; 
+        margin: auto;
+    }
+
+
 }
