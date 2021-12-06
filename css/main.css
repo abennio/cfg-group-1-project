@@ -24,7 +24,7 @@ h3 {
 
 p {
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 
@@ -32,28 +32,23 @@ p {
 
 nav {
     display: inline;
-    padding: 8px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
+    background-color: white;
 }
 
 nav ul li {
     display: inline;
 }
 
-nav .milk-alt-title {
+#milk-alt-title {
     font-family: 'Futura', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-nav .menu {
+.nav-item {
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -65,15 +60,20 @@ header {
     height: 650px;
     margin-left: auto;
     margin-right: auto;
-    text-align:center;
+    text-align: center;
     text-size-adjust: auto;
 }
 
 .page-title {
-    padding: 50px;
+    padding: 100px 50px;
     height: 500px;
     margin: auto;
     text-align: center;
+}
+
+.page-title h1 {
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 header button {
@@ -126,14 +126,15 @@ section table {
     font-size: 1.5rem;
     font-weight: 700;
     border-spacing: 20px;
-    width: 70%; 
-    border-collapse: collapse; 
+    width: 70%;
+    border-collapse: collapse;
     margin: auto;
 }
 
 section table tr th {
     font-size: 5rem;
 }
+
 
 /* Cow's Milk for about page */
 
@@ -158,7 +159,9 @@ section table tr th {
     margin-right: auto;
 }
 
+
 /* Almond Section */
+
 
 /* The almonddiv fixes buttons overlap in mobile view */
 
@@ -360,47 +363,68 @@ footer {
 /*Shrinking for mobile*/
 
 @media (max-width: 768px) {
-
     .waves {
         height: 40px;
         min-height: 30px;
     }
-
     .content {
         height: 30vh;
     }
-
     h1 {
         font-size: 2rem;
     }
-
     h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
         font-size: 1.5rem;
     }
-
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    header button {
+        border: 2px, solid, white;
+        border-radius: 2px;
+        padding: 5px 10px;
+        background-color: rgb(252, 228, 213);
+        font-family: 'Futura', sans-serif;
+        font-size: 1em;
+        margin: 5px;
+    }
+    header button:hover {
+        border: 2px, solid, white;
+        border-radius: 2px;
+        padding: 5px 10px;
+        background-color: rgb(252, 228, 213);
+        font-family: 'Futura', sans-serif;
+        font-size: 1em;
+        margin: 5px;
+        color: black;
+    }
+    header button:active {
+        border: 2px, solid, white;
+        border-radius: 2px;
+        padding: 5px 10px;
+        background-color: rgb(252, 228, 213);
+        font-family: 'Futura', sans-serif;
+        font-size: 1em;
+        margin: 5px;
+    }
     ion-icon {
         font-size: 4rem;
     }
-
     section table tr th {
         font-size: 3rem;
         padding: 20px;
     }
-
     section table {
         list-style: none;
         font-family: 'Futura', sans-serif;
         font-size: 1rem;
         font-weight: 700;
         border-spacing: 20px;
-        width: 70%; 
-        border-collapse: collapse; 
+        width: 70%;
+        border-collapse: collapse;
         margin: auto;
     }
-
-
 }

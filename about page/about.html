@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>About Milk Alternatives</title>
-    
+
 </head>
+
 <body>
 
-    <nav>
-        <ul>
-            <li class="menu">
-                <a href="../index.html">Home</a>
-            </li>
-            <li class="menu">
-                <a href="about.html">About</a>
-            </li>
-            <li style="float:right" class="milk-alt-title">
-                Milk Alternatives
-            </li>
-        </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="milk-alt-title" href="#">Milk Alternatives</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </nav>
 
-            <!--Waves container-->
-            <div>
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <!--Waves container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                     <defs>
                         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                     </defs>
@@ -40,49 +49,61 @@
                         <!--Must be background colour-->
                         <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(255, 246, 246)" />
                     </g>
-                </svg>            
-            </div>
-        <!--Waves end-->
+                </svg>
+    </div>
+    <!--Waves end-->
 
 
-        <section class="milk">
-            <div>
-                <h2>Cow's Milk</h2>
-                <p>A single glass of 200ml of cow's milk produces 0.6kg of emissions, 0.36kg more than Rice milk (the alternative with the most emissions). The same glass takes 1.8 square metres of land, 1.65 square meters more than it's nearest plant-based alternative, Oat. It also uses 125.6 litres of water, 51.3 litres more than Almond milk (the alternative that uses the most water).</p>
-                <p>So why not make a small change, that has a big impact?</p>
-            </div>
-            <img href="">
-            <table>
-                <tr>
-                    <th>0.6 <ion-icon name="cloud"></ion-icon></th>
-                    <th>1.8 <ion-icon name="business"></ion-icon></th>
-                    <th>125.6<ion-icon name="water"></ion-icon></th>
-                </tr>
+    <section class="milk">
+        <div>
+            <h2>Cow's Milk</h2>
+            <p>A single glass of 200ml of cow's milk produces 0.6kg of emissions, 0.36kg more than Rice milk (the alternative with the most emissions). The same glass takes 1.8 square metres of land, 1.65 square meters more than it's nearest plant-based
+                alternative, Oat. It also uses 125.6 litres of water, 51.3 litres more than Almond milk (the alternative that uses the most water).</p>
+            <p>So why not make a small change, that has a big impact?</p>
+        </div>
+        <table>
+            <tr>
+                <th>0.6
+                    <ion-icon name="cloud"></ion-icon>
+                </th>
+                <th>1.8
+                    <ion-icon name="business"></ion-icon>
+                </th>
+                <th>125.6
+                    <ion-icon name="water"></ion-icon>
+                </th>
+            </tr>
 
-                <tr>
-                    <td>Emissions (kg)</td>
-                    <td>Land use (square metre)</td>
-                    <td>Water (litre)</td> 
-                </tr>
-            </table>
-        </section>
+            <tr>
+                <td>Emissions (kg)</td>
+                <td>Land use (square metre)</td>
+                <td>Water (litre)</td>
+            </tr>
+        </table>
+    </section>
 
-        <footer>
-            <h3>Oat Milk Alternatives</h3>
-            <p>Products</p>
-            <p><a href="about page/about.html">About</a></p>
-            <p>Contact Details</p>
-            <p>Copyright. All rights reserved.</p>
-            <img href="">
-            <img href="">
-            <img href="">
-            <img href="">
-        </footer>
+    <footer>
+        <h3>Oat Milk Alternatives</h3>
+        <p>Products</p>
+        <p><a href="about page/about.html">About</a></p>
+        <p>Contact Details</p>
+        <p>Copyright <sup>&copy;</sup> All rights reserved.</p>
+        <img href="">
+        <img href="">
+        <img href="">
+        <img href="">
+    </footer>
 
     <!-- Script icons on environmental impact, add anything from
     https://ionic.io/ionicons -->
 
-    <script type="module"  src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script> 
+    <script type="module" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
