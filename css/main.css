@@ -114,6 +114,9 @@ header button:active {
 section {
     min-height: 500px;
     align-items: flex-start;
+    margin: auto;
+    text-align: center;
+    text-size-adjust: auto;
 }
 
 ion-icon {
@@ -300,7 +303,16 @@ section table tr th {
 
 footer {
     padding: 50px;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(247, 247, 247);
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h3 {
+    padding-bottom: 20px;
 }
 
 
@@ -431,9 +443,7 @@ footer {
         border-collapse: collapse;
         margin: auto;
     }
-
     .milkbreak {
         padding-top: 100px;
     }
-
 }
