@@ -138,6 +138,10 @@ section table tr th {
 
 /* Cow's Milk for about page */
 
+.milkbreak {
+    padding-top: 50px;
+}
+
 .milk {
     padding: 50px;
     background-color: rgb(255, 246, 246);
@@ -427,4 +431,9 @@ footer {
         border-collapse: collapse;
         margin: auto;
     }
+
+    .milkbreak {
+        padding-top: 100px;
+    }
+
 }
