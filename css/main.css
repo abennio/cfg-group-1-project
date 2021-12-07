@@ -166,6 +166,11 @@ section table tr th {
     margin-right: auto;
 }
 
+.milk h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 
 /* Almond Section */
 
@@ -313,6 +318,10 @@ footer a {
 
 footer h3 {
     padding-bottom: 20px;
+}
+
+#copyright {
+    font-size: 0.8rem;
 }
 
 
